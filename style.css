@@ -44,15 +44,21 @@ body {
   height: 500px;
   aspect-ratio: 920/500;
   outline: 1px solid red;
-  border-radius: 1em;
+  border-radius: 0.6em;
   overflow: hidden;
 }
 .main > div {
   flex-grow: 1;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding: 3em;
   /* border-radius: inherit; */
+}
+.main > div > * {
+  /* flex-grow: 1; */
+  /* flex-basis: 0; */
+  /* outline: 1px solid red; */
 }
 .col-1 {
   background: var(--Bright-orange);
@@ -66,13 +72,30 @@ body {
 h1 {
   color: var(--Very-light-gray-background-headings-buttons);
   font-family: "Big Shoulders Display", cursive;
+  font-size: 39px;
 }
 p {
   color: var(--Transparent-white-paragraphs);
   font-family: "Lexend Deca", sans-serif;
+  line-height: 1.8em;
 }
 button {
   background: var(--Very-light-gray-background-headings-buttons);
   border: none;
   outline: none;
+  border-radius: 4em;
+  /* margin-top: auto; */
+  padding: 1em;
+  font-size: 1rem;
+  width: 70%;
+  margin-top: 2.5em;
+}
+.col-1 button {
+  color: var(--Bright-orange);
+}
+.col-2 button {
+  color: var(--Dark-cyan);
+}
+.col-3 button {
+  color: var(--Very-dark-cyan);
 }
