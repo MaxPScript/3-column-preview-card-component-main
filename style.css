@@ -81,7 +81,7 @@ p {
 }
 button {
   background: var(--Very-light-gray-background-headings-buttons);
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   border-radius: 4em;
   /* margin-top: auto; */
@@ -89,13 +89,30 @@ button {
   font-size: 1rem;
   width: 70%;
   margin-top: 2.5em;
+  transition: all 0.3s;
+}
+button:hover {
+  cursor: pointer;
+  border: 1px solid white;
 }
 .col-1 button {
   color: var(--Bright-orange);
 }
+.col-1 button:hover {
+  background: var(--Bright-orange);
+  color: white;
+}
 .col-2 button {
   color: var(--Dark-cyan);
 }
+.col-2 button:hover {
+  background: var(--Dark-cyan);
+  color: white;
+}
 .col-3 button {
   color: var(--Very-dark-cyan);
+}
+.col-3 button:hover {
+  background: var(--Very-dark-cyan);
+  color: white;
 }
