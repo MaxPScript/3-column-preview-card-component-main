@@ -116,3 +116,18 @@ button:hover {
   background: var(--Very-dark-cyan);
   color: white;
 }
+
+@media screen and (max-width: 375px) {
+  .main {
+    flex-direction: column;
+    width: 327px;
+    height: 1330px;
+    overflow: visible;
+    /* aspect-ratio: 327/1330; */
+    /* margin-top: 0; */
+  }
+  button {
+    margin-top: 0;
+    width: 65%;
+  }
+}
