@@ -43,7 +43,7 @@ body {
   width: 920px;
   height: 500px;
   aspect-ratio: 920/500;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   border-radius: 0.6em;
   overflow: hidden;
 }
